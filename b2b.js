@@ -9,7 +9,7 @@
   var SKIP = { 'form-name': 1, 'subject': 1, 'bot-field': 1, 'nombre': 1, 'email': 1, 'telefono': 1 };
   var en = document.documentElement.lang === 'en';
   // Cloudflare Worker that creates Company + Contact + Deal in HubSpot (set after deploying it).
-  var WORKER = '';
+  var WORKER = 'https://pitcheamos-b2b.hola-fb1.workers.dev';
 
   document.querySelectorAll('form[data-hs]').forEach(function (form) {
     form.addEventListener('submit', function (e) {
