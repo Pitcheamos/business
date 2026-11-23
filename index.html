@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<!-- Amplitude: Analytics + Session Replay + Web Experiment + Guides & Surveys -->
+<script src="https://cdn.amplitude.com/script/f75ce8e8fee4c57b00bf503150c825ae.js"></script>
+<script src="https://cdn.amplitude.com/script/f75ce8e8fee4c57b00bf503150c825ae.engagement.js"></script>
+<script>
+  if (window.amplitude) {
+  if (window.sessionReplay) window.amplitude.add(window.sessionReplay.plugin({ sampleRate: 1, privacyConfig: { defaultMaskLevel: 'light', unmaskSelector: ['input', 'textarea', 'select'] } }));
+  if (window.engagement) window.amplitude.add(window.engagement.plugin());
+  window.amplitude.init('f75ce8e8fee4c57b00bf503150c825ae', { fetchRemoteConfig: true, autocapture: true });
+  }
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pitcheamos para empresas · Entrenamiento comercial y contratación de vendedores</title>
+<meta name="description" content="Entrenamiento para equipos de ventas, procesos de selección de vendedores y outplacement. Con la mirada de alguien que vende y contrata todos los días.">
+<meta property="og:title" content="Pitcheamos para empresas">
+<meta property="og:description" content="Equipos que venden mejor. Procesos que contratan mejor.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F4EF;--navy:#14213D;--coral:#EF6450;--muted:#5B6474;--line:#E4DED4;--card:#FFFFFF;--soft:#C9CFDB}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--navy);font-family:'Inter',system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.wrap>*{min-width:0}
+.hl{color:var(--coral)}
+.eyebrow{display:inline-block;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--coral);margin-bottom:14px}
+h1{font-size:clamp(40px,5.6vw,68px);line-height:1.03;letter-spacing:-.035em;font-weight:900}
+h2{font-size:clamp(30px,4vw,46px);line-height:1.08;letter-spacing:-.03em;font-weight:900;max-width:760px}
+h3{font-weight:800;letter-spacing:-.01em}
+.btn{display:inline-block;background:var(--coral);color:#fff;text-decoration:none;font-weight:700;padding:15px 26px;border-radius:999px;border:0;font-size:16px;cursor:pointer;transition:transform .15s;font-family:inherit}
+.btn:hover{transform:translateY(-1px)}
+.btn.ghost{background:transparent;border:2px solid currentColor;padding:13px 24px}
+section{padding:80px 0}
+section[id]{scroll-margin-top:72px}
+.alt{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px}
+.card p,.card li{color:var(--muted)}
+.grid{display:grid;gap:20px;margin-top:40px}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(247,244,239,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;letter-spacing:.06em;font-size:17px}
+.logo svg{width:34px;height:34px}
+.tag{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--navy);border-radius:999px;padding:4px 10px}
+.links{display:flex;gap:28px;align-items:center;margin:0 auto}
+.links a{text-decoration:none;font-size:15px;font-weight:500;color:var(--muted)}
+.links a:hover{color:var(--navy)}
+.links .btn-m{display:none}
+.navend{display:flex;align-items:center;gap:14px}
+.navend .btn{padding:11px 20px;font-size:14px}
+.burger{display:none;background:none;border:0;width:42px;height:42px;cursor:pointer;padding:9px;border-radius:10px}
+.burger span{display:block;height:2px;background:var(--navy);border-radius:2px;margin:5px 0;transition:.2s}
+nav.open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+nav.open .burger span:nth-child(2){opacity:0}
+nav.open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+/* hero */
+.hero{background:var(--navy);color:#fff;padding:96px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center}
+.hero .lead{font-size:19px;color:var(--soft);margin:22px 0 30px;max-width:540px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero .ghost{color:#fff}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.stat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:26px}
+.stat strong{display:block;font-size:44px;font-weight:900;letter-spacing:-.03em;color:var(--coral);line-height:1}
+.stat strong.sm{font-size:26px;line-height:1.15}
+.stat span{display:block;font-size:15px;color:var(--soft);margin-top:8px}
+/* services */
+.svc{background:var(--bg);display:flex;flex-direction:column;gap:12px}
+.svc.featured{border:2px solid var(--coral)}
+.ico{width:44px;height:44px;border-radius:12px;background:var(--coral);display:flex;align-items:center;justify-content:center}
+.svc h3{font-size:22px}
+.svc ul{padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.num{width:40px;height:40px;border-radius:12px;background:var(--navy);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.steps{list-style:none}
+.steps h3{font-size:19px;margin-bottom:8px}
+.fmt{display:flex;flex-direction:column;gap:10px}
+.fmt.featured{border:2px solid var(--coral)}
+.fmt .kicker{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--coral)}
+.fmt h3{font-size:22px}
+.fmt .price{margin-top:auto;padding-top:8px;font-weight:700;color:var(--navy)}
+.center{text-align:center;color:var(--muted);margin-top:24px}
+/* about */
+.about .wrap{display:flex;gap:48px;align-items:center;flex-wrap:wrap}
+.about img{width:220px;height:220px;border-radius:50%;object-fit:cover;border:6px solid var(--coral);flex:none}
+.about .txt{flex:999 1 480px;min-width:0}
+.about h2{font-size:clamp(28px,3.6vw,40px)}
+.about p{color:var(--muted);font-size:17px;margin-top:14px;max-width:680px}
+/* contact */
+.contact{background:var(--navy);color:#fff}
+.contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:56px;align-items:start}
+.contact .sub{color:var(--soft);font-size:18px;margin:16px 0 28px}
+.contact .mail{display:block;margin-top:16px;color:#fff}
+form{background:var(--card);color:var(--navy);border-radius:28px;padding:34px;display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+label{font-weight:600;font-size:15px;display:grid;gap:6px}
+label .opt{font-weight:400;color:var(--muted)}
+input,select,textarea{width:100%;min-width:0;font:inherit;color:var(--navy);padding:13px 15px;border:1.5px solid var(--line);border-radius:12px;background:#FDFCFA}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--coral)}
+textarea{min-height:110px;resize:vertical}
+.hidden{display:none}
+.small{font-size:13px;color:var(--muted)}
+.small a{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (max-width:1000px){
+  .burger{display:block}
+  .navend .btn{display:none}
+  .links{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;margin:0;background:var(--bg);border-bottom:1px solid var(--line);padding:6px 24px 20px;box-shadow:0 12px 24px rgba(20,33,61,.08)}
+  .links a{padding:14px 0;border-bottom:1px solid var(--line);font-size:17px;color:var(--navy)}
+  .links .btn-m{display:block;margin-top:16px;text-align:center;border:0;color:#fff}
+  nav.open .links{display:flex}
+  .hero .wrap,.contact .wrap{grid-template-columns:1fr}
+  .g3{grid-template-columns:1fr}
+  .g4{grid-template-columns:1fr 1fr}
+  .hero{padding:56px 0 48px} section{padding:60px 0}
+}
+@media (max-width:560px){.g4,.row2{grid-template-columns:1fr} .stat strong{font-size:36px} form{padding:24px} .tag{display:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="mark" viewBox="0 0 100 100">
+      <path d="M12 10 H58 Q66 10 66 18 V48 Q66 56 58 56 H30 L18 68 V56 H12 Q4 56 4 48 V18 Q4 10 12 10 Z" fill="#14213D"/>
+      <path d="M88 40 H48 Q40 40 40 48 V74 Q40 82 48 82 H72 L84 94 V82 H88 Q96 82 96 74 V48 Q96 40 88 40 Z" fill="#EF6450"/>
+    </symbol>
+  </defs>
+</svg>
+
+<nav><div class="wrap">
+  <a class="logo" href="/"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#mark"/></svg>PITCHEAMOS <span class="tag">Empresas</span></a>
+  <div class="links"><a href="#servicios">Servicios</a><a href="#como">Cómo trabajamos</a><a href="#formatos">Formatos</a><a href="#quien">Quién soy</a><a href="#contacto">Contacto</a><a class="btn btn-m" href="https://meetings.hubspot.com/matias-bossie" target="_blank" rel="noopener">Agendá una reunión</a></div>
+  <div class="navend"><a class="btn" href="https://meetings.hubspot.com/matias-bossie" target="_blank" rel="noopener">Agendá una reunión</a><button class="burger" aria-label="Abrir menú" aria-expanded="false" onclick="var n=this.closest('nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))"><span></span><span></span><span></span></button></div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div>
+    <span class="eyebrow">Pitcheamos para empresas</span>
+    <h1>Equipos que venden mejor. <span class="hl">Procesos que contratan mejor.</span></h1>
+    <p class="lead">Entrenamiento para equipos comerciales, procesos de selección de vendedores y acompañamiento para personas en transición. Con la mirada de alguien que vende y contrata todos los días.</p>
+    <div class="ctas">
+      <a class="btn" href="https://meetings.hubspot.com/matias-bossie" target="_blank" rel="noopener">📅 Agendá una reunión</a>
+      <a class="btn ghost" href="#servicios">Ver servicios</a>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat"><strong>+100</strong><span>personas entrevistadas en los últimos 4 años</span></div>
+    <div class="stat"><strong>+30</strong><span>contrataciones para equipos comerciales</span></div>
+    <div class="stat"><strong>15</strong><span>años en ventas B2B</span></div>
+    <div class="stat"><strong class="sm">LATAM · EE.&nbsp;UU. · Europa</strong><span>clientes y equipos en tres regiones</span></div>
+  </div>
+</div></header>
+
+<section><div class="wrap">
+  <h2>¿Te suena alguna de <span class="hl">estas?</span></h2>
+  <div class="grid g3">
+    <div class="card"><h3 style="font-size:20px;margin-bottom:10px">El equipo tiene reuniones, pero no cierra</h3><p>Mucho pipeline y poca conversión. Las propuestas se enfrían y nadie sabe en qué etapa se cae.</p></div>
+    <div class="card"><h3 style="font-size:20px;margin-bottom:10px">Contratás vendedores y no funcionan</h3><p>Entrevistas que dependen de la intuición, sin criterios claros. A los seis meses, otra vez a buscar.</p></div>
+    <div class="card"><h3 style="font-size:20px;margin-bottom:10px">Una reestructura que querés cuidar</h3><p>Personas que salen de la empresa y merecen un acompañamiento real para recolocarse rápido.</p></div>
+  </div>
+</div></section>
+
+<section id="servicios" class="alt"><div class="wrap">
+  <span class="eyebrow">Servicios</span>
+  <h2>Tres formas de <span class="hl">trabajar juntos</span></h2>
+  <div class="grid g3">
+    <div class="card svc">
+      <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
+      <h3>Entrenamiento comercial</h3>
+      <p>Talleres prácticos para que tu equipo venda con método.</p>
+      <ul><li>Pitch y propuesta de valor</li><li>Discovery: preguntar antes de presentar</li><li>Manejo de objeciones y negociación</li><li>Cierre y seguimiento del pipeline</li></ul>
+    </div>
+    <div class="card svc featured">
+      <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21c0-4 3-6 7-6s7 2 7 6"/><path d="M17 11l2 2 4-4"/></svg></div>
+      <h3>Contratación de vendedores</h3>
+      <p>Un proceso de selección que reduce la intuición y suma criterio.</p>
+      <ul><li>Perfil del rol y qué medir</li><li>Guía de entrevistas y scorecard</li><li>Caso práctico o role play de venta</li><li>Entrevistas en conjunto con tu equipo</li></ul>
+    </div>
+    <div class="card svc">
+      <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></div>
+      <h3>Outplacement</h3>
+      <p>Acompañamiento para las personas que dejan la empresa.</p>
+      <ul><li>Diagnóstico y foco de búsqueda</li><li>CV, LinkedIn y pitch</li><li>Simulacros de entrevista</li><li>Negociación de la nueva oferta</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="como"><div class="wrap">
+  <span class="eyebrow">Cómo trabajamos</span>
+  <h2>De la conversación <span class="hl">a los resultados</span></h2>
+  <ol class="grid g4 steps">
+    <li class="card"><div class="num">1</div><h3>Diagnóstico</h3><p>Entrevistas con líderes y el equipo, revisión del pipeline y del proceso actual.</p></li>
+    <li class="card"><div class="num">2</div><h3>Plan a medida</h3><p>Objetivos, métricas y formato acordados con vos antes de empezar.</p></li>
+    <li class="card"><div class="num">3</div><h3>Trabajo práctico</h3><p>Talleres, role plays y sesiones con casos reales del equipo, no teoría.</p></li>
+    <li class="card"><div class="num">4</div><h3>Seguimiento</h3><p>Revisamos las métricas acordadas y ajustamos lo que haga falta.</p></li>
+  </ol>
+</div></section>
+
+<section id="formatos" class="alt"><div class="wrap">
+  <span class="eyebrow">Formatos</span>
+  <h2>Elegí el que se adapta <span class="hl">a tu equipo</span></h2>
+  <div class="grid g3">
+    <div class="card fmt"><span class="kicker">Para arrancar</span><h3>Taller intensivo</h3><p>Medio día o un día completo, presencial u online. Un tema puntual, mucha práctica.</p><p class="price">Cotización según el tamaño del equipo</p></div>
+    <div class="card fmt featured"><span class="kicker">Más completo</span><h3>Programa de 6 a 8 semanas</h3><p>Diagnóstico, talleres semanales, role plays con casos reales y seguimiento de métricas.</p><p class="price">Cotización a medida</p></div>
+    <div class="card fmt"><span class="kicker">Para líderes</span><h3>Coaching 1 a 1</h3><p>Sesiones con gerentes comerciales: cómo liderar, contratar y desarrollar a su equipo.</p><p class="price">Paquetes mensuales</p></div>
+  </div>
+  <p class="center">En español o en inglés. Para equipos en México, LATAM y Estados Unidos.</p>
+</div></section>
+
+<section id="quien" class="about"><div class="wrap">
+  <img src="/mati.jpg" alt="Mati, fundador de Pitcheamos" width="220" height="220" loading="lazy">
+  <div class="txt">
+    <span class="eyebrow">Quién está detrás</span>
+    <h2>Soy Mati. Vendo, armo equipos <span class="hl">y contrato.</span></h2>
+    <p>Llevo 15 años en ventas B2B con clientes y equipos de Latinoamérica, Estados Unidos y Europa. En 2023 abrí desde cero la región norte de Latinoamérica para una empresa de tecnología: armé el equipo, entrevisté a más de 100 personas y contraté a más de 30.</p>
+    <p>MBA en el Tec de Monterrey y formación en ventas y coaching. Lo que enseño es lo que hago todos los días.</p>
+  </div>
+</div></section>
+
+<section id="contacto" class="contact"><div class="wrap">
+  <div>
+    <span class="eyebrow">Contacto</span>
+    <h2 style="color:#fff">Contame de tu equipo. <span class="hl">Armamos el plan juntos.</span></h2>
+    <p class="sub">Una primera reunión de 30 minutos, sin costo, para entender dónde está tu equipo y qué necesita. Reservala directo o dejame tus datos y te escribo.</p>
+    <a class="btn" href="https://meetings.hubspot.com/matias-bossie" target="_blank" rel="noopener">📅 Agendá una reunión</a>
+    <a class="mail" href="mailto:hola@pitcheamos.com">o escribime a hola@pitcheamos.com</a>
+  </div>
+  <form name="empresas" method="POST" action="/gracias" data-hs>
+    <input type="hidden" name="form-name" value="empresas">
+    <p class="hidden"><label>No completar: <input name="bot-field"></label></p>
+    <div class="row2">
+      <label>Nombre<input type="text" name="nombre" required></label>
+      <label>Empresa<input type="text" name="empresa" required></label>
+    </div>
+    <div class="row2">
+      <label>Email<input type="email" name="email" required></label>
+      <label>WhatsApp o teléfono <span class="opt">(opcional)</span><input type="tel" name="telefono" placeholder="+52 55…"></label>
+    </div>
+    <label>¿Qué te interesa?
+      <select name="interes" required>
+        <option value="">Elegí una opción</option>
+        <option>Entrenamiento comercial</option>
+        <option>Contratación de vendedores</option>
+        <option>Outplacement</option>
+        <option>Coaching para líderes</option>
+        <option>Todavía no lo sé</option>
+      </select></label>
+    <label>Tamaño del equipo
+      <select name="equipo">
+        <option value="">Elegí una opción</option>
+        <option>1 a 5 personas</option>
+        <option>6 a 15 personas</option>
+        <option>16 a 50 personas</option>
+        <option>Más de 50 personas</option>
+      </select></label>
+    <label>Contame un poco más <span class="opt">(opcional)</span><textarea name="mensaje" placeholder="Qué está pasando con el equipo, qué te gustaría lograr…"></textarea></label>
+    <button class="btn" type="submit">Enviar</button>
+    <p class="small">Te respondo en menos de 48 horas. Al enviar, aceptás el <a href="https://pitcheamos.com/privacidad">aviso de privacidad</a>.</p>
+  </form>
+</div></section>
+
+<footer><div class="wrap">
+  <span>© 2026 Pitcheamos · Una marca de Revum Group LLC · <a href="https://pitcheamos.com/privacidad">Aviso de privacidad</a></span>
+  <span><a href="https://pitcheamos.com">¿Buscás trabajo? Coaching para personas →</a></span>
+</div></footer>
+
+<script>document.querySelectorAll('nav .links a').forEach(function(a){a.addEventListener('click',function(){var n=document.querySelector('nav');n.classList.remove('open');n.querySelector('.burger').setAttribute('aria-expanded','false')})})</script>
+<script src="/nohash.js"></script>
+<script src="/b2b.js"></script>
+</body>
+</html>
